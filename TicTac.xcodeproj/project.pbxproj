@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3F33BB1D0A139900CA117F /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BA1D0A139900CA117F /* GameError.swift */; };
 		EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311F81D09FCB000714308 /* AppDelegate.swift */; };
 		EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311FA1D09FCB000714308 /* ViewController.swift */; };
 		EE9311FE1D09FCB000714308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9311FC1D09FCB000714308 /* Main.storyboard */; };
@@ -15,6 +16,11 @@
 		EE9312061D09FCB000714308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9312041D09FCB000714308 /* LaunchScreen.storyboard */; };
 		EE9312111D09FCB000714308 /* TicTacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312101D09FCB000714308 /* TicTacTests.swift */; };
 		EE93121C1D09FCB000714308 /* TicTacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93121B1D09FCB000714308 /* TicTacUITests.swift */; };
+		EE93122A1D09FCD300714308 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312291D09FCD300714308 /* BrainTests.swift */; };
+		EE93122D1D09FDAA00714308 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93122C1D09FDAA00714308 /* Brain.swift */; };
+		EE93122F1D0A076600714308 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93122E1D0A076600714308 /* GameTests.swift */; };
+		EE9312311D0A081A00714308 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312301D0A081A00714308 /* Game.swift */; };
+		EE9312331D0A094700714308 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312321D0A094700714308 /* Coordinate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE3F33BA1D0A139900CA117F /* GameError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
 		EE9311F51D09FCB000714308 /* TicTac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9311F81D09FCB000714308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9311FA1D09FCB000714308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		EE9312171D09FCB000714308 /* TicTacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE93121B1D09FCB000714308 /* TicTacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacUITests.swift; sourceTree = "<group>"; };
 		EE93121D1D09FCB000714308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE9312291D09FCD300714308 /* BrainTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainTests.swift; sourceTree = "<group>"; };
+		EE93122C1D09FDAA00714308 /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		EE93122E1D0A076600714308 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
+		EE9312301D0A081A00714308 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		EE9312321D0A094700714308 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		EE9311F71D09FCB000714308 /* TicTac */ = {
 			isa = PBXGroup;
 			children = (
+				EE93122B1D09FD9200714308 /* Models */,
 				EE9311F81D09FCB000714308 /* AppDelegate.swift */,
 				EE9311FA1D09FCB000714308 /* ViewController.swift */,
 				EE9311FC1D09FCB000714308 /* Main.storyboard */,
@@ -115,6 +128,8 @@
 			children = (
 				EE9312101D09FCB000714308 /* TicTacTests.swift */,
 				EE9312121D09FCB000714308 /* Info.plist */,
+				EE9312291D09FCD300714308 /* BrainTests.swift */,
+				EE93122E1D0A076600714308 /* GameTests.swift */,
 			);
 			path = TicTacTests;
 			sourceTree = "<group>";
@@ -126,6 +141,17 @@
 				EE93121D1D09FCB000714308 /* Info.plist */,
 			);
 			path = TicTacUITests;
+			sourceTree = "<group>";
+		};
+		EE93122B1D09FD9200714308 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE93122C1D09FDAA00714308 /* Brain.swift */,
+				EE9312301D0A081A00714308 /* Game.swift */,
+				EE9312321D0A094700714308 /* Coordinate.swift */,
+				EE3F33BA1D0A139900CA117F /* GameError.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */,
+				EE9312311D0A081A00714308 /* Game.swift in Sources */,
+				EE3F33BB1D0A139900CA117F /* GameError.swift in Sources */,
+				EE9312331D0A094700714308 /* Coordinate.swift in Sources */,
 				EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */,
+				EE93122D1D09FDAA00714308 /* Brain.swift in Sources */,
 				EE9312011D09FCB000714308 /* TicTac.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE93122A1D09FCD300714308 /* BrainTests.swift in Sources */,
+				EE93122F1D0A076600714308 /* GameTests.swift in Sources */,
 				EE9312111D09FCB000714308 /* TicTacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +521,7 @@
 				EE9312221D09FCB000714308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE9312231D09FCB000714308 /* Build configuration list for PBXNativeTarget "TicTacTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +530,7 @@
 				EE9312251D09FCB000714308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE9312261D09FCB000714308 /* Build configuration list for PBXNativeTarget "TicTacUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +539,7 @@
 				EE9312281D09FCB000714308 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
