@@ -22,22 +22,6 @@ class BrainTests: XCTestCase {
         super.tearDown()
     }
     
-    /*func testWhenGameStarsIsPlayerOneTurn(){
-        XCTAssertEqual(brain.isPlayerOne, true);
-    }
-    
-    func testBrainKeepTrackOfPlayerOne(){
-        brain.play()
-        XCTAssertNotEqual(brain.isPlayerOne, false)
-    }
-    
-    func testCheckIfGameIsOver(){
-        let coordinate = Coordinate(1,1)
-        game.play(State.X, coordinate: coordinate)
-        XCTAssertEqual(game.isGameOver(), false)
-    }
-    */
-    
     func testPlayChangeValueOfBox(){
         let coordinate = Coordinate(0,2)
         brain.play(State.O, coordinate: coordinate)
