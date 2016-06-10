@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE3F33BB1D0A139900CA117F /* GameError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BA1D0A139900CA117F /* GameError.swift */; };
+		EE3F33BB1D0A139900CA117F /* BoardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BA1D0A139900CA117F /* BoardError.swift */; };
+		EE3F33BD1D0A458E00CA117F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BC1D0A458E00CA117F /* State.swift */; };
 		EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311F81D09FCB000714308 /* AppDelegate.swift */; };
 		EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311FA1D09FCB000714308 /* ViewController.swift */; };
 		EE9311FE1D09FCB000714308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9311FC1D09FCB000714308 /* Main.storyboard */; };
 		EE9312011D09FCB000714308 /* TicTac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE9311FF1D09FCB000714308 /* TicTac.xcdatamodeld */; };
 		EE9312031D09FCB000714308 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9312021D09FCB000714308 /* Assets.xcassets */; };
 		EE9312061D09FCB000714308 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9312041D09FCB000714308 /* LaunchScreen.storyboard */; };
-		EE9312111D09FCB000714308 /* TicTacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312101D09FCB000714308 /* TicTacTests.swift */; };
 		EE93121C1D09FCB000714308 /* TicTacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93121B1D09FCB000714308 /* TicTacUITests.swift */; };
 		EE93122A1D09FCD300714308 /* BrainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312291D09FCD300714308 /* BrainTests.swift */; };
 		EE93122D1D09FDAA00714308 /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93122C1D09FDAA00714308 /* Brain.swift */; };
@@ -41,7 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE3F33BA1D0A139900CA117F /* GameError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameError.swift; sourceTree = "<group>"; };
+		EE3F33BA1D0A139900CA117F /* BoardError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardError.swift; sourceTree = "<group>"; };
+		EE3F33BC1D0A458E00CA117F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		EE9311F51D09FCB000714308 /* TicTac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9311F81D09FCB000714308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9311FA1D09FCB000714308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		EE9312051D09FCB000714308 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE9312071D09FCB000714308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE93120C1D09FCB000714308 /* TicTacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE9312101D09FCB000714308 /* TicTacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacTests.swift; sourceTree = "<group>"; };
 		EE9312121D09FCB000714308 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE9312171D09FCB000714308 /* TicTacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE93121B1D09FCB000714308 /* TicTacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacUITests.swift; sourceTree = "<group>"; };
@@ -126,7 +126,6 @@
 		EE93120F1D09FCB000714308 /* TicTacTests */ = {
 			isa = PBXGroup;
 			children = (
-				EE9312101D09FCB000714308 /* TicTacTests.swift */,
 				EE9312121D09FCB000714308 /* Info.plist */,
 				EE9312291D09FCD300714308 /* BrainTests.swift */,
 				EE93122E1D0A076600714308 /* GameTests.swift */,
@@ -149,7 +148,8 @@
 				EE93122C1D09FDAA00714308 /* Brain.swift */,
 				EE9312301D0A081A00714308 /* Game.swift */,
 				EE9312321D0A094700714308 /* Coordinate.swift */,
-				EE3F33BA1D0A139900CA117F /* GameError.swift */,
+				EE3F33BA1D0A139900CA117F /* BoardError.swift */,
+				EE3F33BC1D0A458E00CA117F /* State.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -290,11 +290,12 @@
 			files = (
 				EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */,
 				EE9312311D0A081A00714308 /* Game.swift in Sources */,
-				EE3F33BB1D0A139900CA117F /* GameError.swift in Sources */,
+				EE3F33BB1D0A139900CA117F /* BoardError.swift in Sources */,
 				EE9312331D0A094700714308 /* Coordinate.swift in Sources */,
 				EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */,
 				EE93122D1D09FDAA00714308 /* Brain.swift in Sources */,
 				EE9312011D09FCB000714308 /* TicTac.xcdatamodeld in Sources */,
+				EE3F33BD1D0A458E00CA117F /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +305,6 @@
 			files = (
 				EE93122A1D09FCD300714308 /* BrainTests.swift in Sources */,
 				EE93122F1D0A076600714308 /* GameTests.swift in Sources */,
-				EE9312111D09FCB000714308 /* TicTacTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,7 +14,7 @@ class GameTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        game.start()
+        game.start(3, rows: 3)
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -24,29 +24,14 @@ class GameTests: XCTestCase {
     }
     
     func testGameboardIsEmptyWhenGameStart(){
-        XCTAssertEqual(game.board.count, 3)
+        XCTAssertEqual(game.brain.board.count, 3)
     }
     
     func testGameboardIsAffectedByPlay(){
         let coordinate = Coordinate(1,1)
-        game.play(true, coordinate: coordinate)
+        game.move(State.X, coordinate: coordinate)
+        let box = game.brain.getValueOnCoordinate(coordinate)!
         
-        var symbol: String
-        
-        do {
-            symbol = try game.getValueOnCoordinate(coordinate)
-        }
-        catch{
-            symbol = ""
-        }
-        
-        XCTAssertEqual(symbol, "X")
-    }
-    
-    func testCheckIfGameIsOver(){
-        let coordinate = Coordinate(1,1)
-        game.play(true, coordinate: coordinate)
-        XCTAssertEqual(game.isGameOver(), false)
-    }
-    
+        XCTAssertEqual(box, State.X)
+    }    
 }
