@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE3F33BB1D0A139900CA117F /* BoardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BA1D0A139900CA117F /* BoardError.swift */; };
 		EE3F33BD1D0A458E00CA117F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3F33BC1D0A458E00CA117F /* State.swift */; };
 		EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311F81D09FCB000714308 /* AppDelegate.swift */; };
 		EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9311FA1D09FCB000714308 /* ViewController.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE3F33BA1D0A139900CA117F /* BoardError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardError.swift; sourceTree = "<group>"; };
 		EE3F33BC1D0A458E00CA117F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		EE9311F51D09FCB000714308 /* TicTac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9311F81D09FCB000714308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				EE93122C1D09FDAA00714308 /* Brain.swift */,
 				EE9312301D0A081A00714308 /* Game.swift */,
 				EE9312321D0A094700714308 /* Coordinate.swift */,
-				EE3F33BA1D0A139900CA117F /* BoardError.swift */,
 				EE3F33BC1D0A458E00CA117F /* State.swift */,
 			);
 			name = Models;
@@ -290,7 +287,6 @@
 			files = (
 				EE9311FB1D09FCB000714308 /* ViewController.swift in Sources */,
 				EE9312311D0A081A00714308 /* Game.swift in Sources */,
-				EE3F33BB1D0A139900CA117F /* BoardError.swift in Sources */,
 				EE9312331D0A094700714308 /* Coordinate.swift in Sources */,
 				EE9311F91D09FCB000714308 /* AppDelegate.swift in Sources */,
 				EE93122D1D09FDAA00714308 /* Brain.swift in Sources */,
