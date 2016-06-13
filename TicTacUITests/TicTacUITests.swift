@@ -9,7 +9,7 @@
 import XCTest
 
 class TicTacUITests: XCTestCase {
-        
+    
     override func setUp() {
         super.setUp()
         
@@ -28,9 +28,85 @@ class TicTacUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func setUpMatch(){
+        let app = XCUIApplication()
+        app.textFields["playerOneTextField"].tap()
+        app.textFields["playerOneTextField"].typeText("John")
+        app.textFields["playerTwoTextField"].tap()
+        app.textFields["playerTwoTextField"].typeText("Louis")
+        app.buttons["startButton"].tap()
     }
     
+    func testTapButtonOne (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonOne"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonTwo (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonTwo"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+
+    func testTapButtonThree (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonThree"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonFour (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonFour"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonFive (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonFive"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonSix (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonSix"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonSeven (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonSeven"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonEight (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonEight"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
+    
+    func testTapButtonNine (){
+        setUpMatch()
+        let app = XCUIApplication()
+        let button = app.buttons["buttonNine"]
+        button.tap()
+        XCTAssertEqual(button.label, "X")
+    }
 }
