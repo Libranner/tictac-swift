@@ -10,7 +10,7 @@ import XCTest
 @testable import TicTac
 
 class GameTests: XCTestCase {
-    let game = Game()
+    let game = Game(playerOne: "John", playerTwo: "Louis")
     
     override func setUp() {
         super.setUp()
@@ -23,15 +23,16 @@ class GameTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGameboardIsEmptyWhenGameStart(){
-        XCTAssertEqual(game.brain.board.count, 3)
-    }
-    
     func testGameboardIsAffectedByPlay(){
         let coordinate = Coordinate(1,1)
         game.move(State.X, coordinate: coordinate)
         let box = game.brain.getValueOnCoordinate(coordinate)!
         
         XCTAssertEqual(box, State.X)
-    }    
+    }
+    
+    func testCanSetPlayers(){
+        XCTAssertEqual(game.playerOne, "John")
+        XCTAssertEqual(game.playerTwo, "Louis")
+    }
 }

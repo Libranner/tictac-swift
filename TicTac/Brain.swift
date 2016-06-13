@@ -18,12 +18,12 @@ class Brain: NSObject {
         self.centerCoordinate = centerCoordinate
     }
     
-    func play(state:State, coordinate: Coordinate) -> Bool {
+    func play(state:State, coordinate: Coordinate) -> (moved: Bool, isOver: Bool) {
         guard getValueOnCoordinate(coordinate) != State.Blank else {
             self.board[coordinate.x][coordinate.y] = state
-            return isGameOver(coordinate, state: state)
+            return (true, isGameOver(coordinate, state: state))
         }
-        return false
+        return (false, false)
     }
     
     func getValueOnCoordinate(coordinate: Coordinate) -> State?{

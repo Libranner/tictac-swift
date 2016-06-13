@@ -36,7 +36,7 @@ class BrainTests: XCTestCase {
         brain.play(State.O, coordinate: Coordinate(2,0))
         brain.play(State.O, coordinate: Coordinate(2,2))
         let win = brain.play(State.O, coordinate: Coordinate(1,0))
-        XCTAssertEqual(win, true)
+        XCTAssertEqual(win.isOver, true)
     }
     
     func testUserWinsVertically(){
@@ -44,7 +44,7 @@ class BrainTests: XCTestCase {
         brain.play(State.O, coordinate: Coordinate(1,2))
         let win = brain.play(State.O, coordinate: Coordinate(1,0))
         
-        XCTAssertEqual(win, true)
+        XCTAssertEqual(win.isOver, true)
     }
     
     func testUserWinsDiagonally(){
@@ -52,6 +52,6 @@ class BrainTests: XCTestCase {
         brain.play(State.O, coordinate: Coordinate(1,1))
         let win = brain.play(State.O, coordinate: Coordinate(2,2))
         
-        XCTAssertEqual(win, true)
+        XCTAssertEqual(win.isOver, true)
     }
 }

@@ -20,6 +20,7 @@
 		EE93122F1D0A076600714308 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE93122E1D0A076600714308 /* GameTests.swift */; };
 		EE9312311D0A081A00714308 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312301D0A081A00714308 /* Game.swift */; };
 		EE9312331D0A094700714308 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9312321D0A094700714308 /* Coordinate.swift */; };
+		EED800A01D0F00FA00C259C0 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED8009F1D0F00FA00C259C0 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		EE93122E1D0A076600714308 /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		EE9312301D0A081A00714308 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		EE9312321D0A094700714308 /* Coordinate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		EED8009F1D0F00FA00C259C0 /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				EE9312121D09FCB000714308 /* Info.plist */,
 				EE9312291D09FCD300714308 /* BrainTests.swift */,
 				EE93122E1D0A076600714308 /* GameTests.swift */,
+				EED8009F1D0F00FA00C259C0 /* ViewControllerTests.swift */,
 			);
 			path = TicTacTests;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED800A01D0F00FA00C259C0 /* ViewControllerTests.swift in Sources */,
 				EE93122A1D09FCD300714308 /* BrainTests.swift in Sources */,
 				EE93122F1D0A076600714308 /* GameTests.swift in Sources */,
 			);
