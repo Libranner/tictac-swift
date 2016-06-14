@@ -93,109 +93,100 @@
                                     <constraint firstAttribute="height" constant="300" id="PBO-oe-4CS"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-6o-fga">
+                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNT-6o-fga">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonEight"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="151" y="263" width="72" height="73"/>
+                                    <rect key="frame" x="151" y="286" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HHd-B6-aCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-AW-rNu">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-AW-rNu">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonSeven"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="269" width="72" height="73"/>
+                                    <rect key="frame" x="63" y="292" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LQq-7e-mcw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-DG-dkZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjo-DG-dkZ">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonOne"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="431" width="72" height="73"/>
+                                    <rect key="frame" x="63" y="454" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cgQ-hH-75d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuW-r6-P1z">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuW-r6-P1z">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonFive"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="151" y="344" width="72" height="73"/>
+                                    <rect key="frame" x="151" y="367" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiF-pj-vlG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7u-Cr-o0O">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7u-Cr-o0O">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonTwo"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="151" y="431" width="72" height="73"/>
+                                    <rect key="frame" x="151" y="454" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H71-pF-H46"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-7h-jkl">
+                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhu-7h-jkl">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonSix"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="244" y="344" width="72" height="73"/>
+                                    <rect key="frame" x="244" y="367" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GCd-dQ-EF2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-xj-MXm">
+                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubM-xj-MXm">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonNine"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="244" y="269" width="72" height="73"/>
+                                    <rect key="frame" x="244" y="292" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="686-As-gNS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnH-0h-617">
+                            <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnH-0h-617">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonThree"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="244" y="431" width="72" height="73"/>
+                                    <rect key="frame" x="244" y="454" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JW-bJ-JX6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X57-rf-vfd">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X57-rf-vfd">
                                 <rect key="frame" x="173" y="293" width="46" height="30"/>
                                 <accessibility key="accessibilityConfiguration" identifier="buttonFour"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="59"/>
-                                <state key="normal" title="O"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="350" width="72" height="73"/>
+                                    <rect key="frame" x="63" y="373" width="73" height="73"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftq-mZ-BDs"/>
@@ -207,7 +198,9 @@
                             <constraint firstItem="HZt-ew-m43" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0gz-Hi-RbI"/>
                             <constraint firstItem="CcV-m6-isL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="0hv-QS-3b2"/>
                             <constraint firstItem="HZt-ew-m43" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Mbc-Vb-2Q7"/>
-                            <constraint firstItem="yAk-gb-rfG" firstAttribute="top" secondItem="CcV-m6-isL" secondAttribute="top" multiplier="3" id="QGh-F8-I2h"/>
+                            <constraint firstItem="yAk-gb-rfG" firstAttribute="top" secondItem="CcV-m6-isL" secondAttribute="top" multiplier="3" id="QGh-F8-I2h">
+                                <variation key="widthClass=compact" constant="23"/>
+                            </constraint>
                             <constraint firstItem="yAk-gb-rfG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S6h-3y-chA"/>
                             <constraint firstItem="EJZ-kV-uYF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lo7-Pt-TKX"/>
                             <constraint firstItem="CcV-m6-isL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="80" id="ma3-e9-VLa"/>
@@ -255,6 +248,15 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="buttonEight" destination="YNT-6o-fga" id="18k-64-OuA"/>
+                        <outlet property="buttonFive" destination="zuW-r6-P1z" id="UEK-NJ-uxy"/>
+                        <outlet property="buttonFour" destination="X57-rf-vfd" id="FWV-ur-eCh"/>
+                        <outlet property="buttonNine" destination="ubM-xj-MXm" id="DIz-dm-lO1"/>
+                        <outlet property="buttonOne" destination="fjo-DG-dkZ" id="bBZ-b2-o0W"/>
+                        <outlet property="buttonSeven" destination="Sne-AW-rNu" id="Vpw-Ms-hkL"/>
+                        <outlet property="buttonSix" destination="uhu-7h-jkl" id="PvJ-fD-S1n"/>
+                        <outlet property="buttonThree" destination="NnH-0h-617" id="n0j-lH-eau"/>
+                        <outlet property="buttonTwo" destination="C7u-Cr-o0O" id="U6c-d6-3gG"/>
                         <outlet property="playerOneTextField" destination="OKc-12-uPv" id="gDj-oh-01r"/>
                         <outlet property="playerTwoTextField" destination="Fun-7u-y80" id="0fD-nY-jen"/>
                     </connections>
