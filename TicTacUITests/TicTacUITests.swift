@@ -19,7 +19,7 @@ class TicTacUITests: XCTestCase {
         continueAfterFailure = false
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
+        setUpMatch()
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
     
@@ -39,7 +39,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonOne (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonOne"]
         button.tap()
@@ -47,7 +46,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonTwo (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonTwo"]
         button.tap()
@@ -55,7 +53,6 @@ class TicTacUITests: XCTestCase {
     }
 
     func testTapButtonThree (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonThree"]
         button.tap()
@@ -63,7 +60,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonFour (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonFour"]
         button.tap()
@@ -71,7 +67,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonFive (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonFive"]
         button.tap()
@@ -79,7 +74,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonSix (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonSix"]
         button.tap()
@@ -87,7 +81,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonSeven (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonSeven"]
         button.tap()
@@ -95,7 +88,6 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonEight (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonEight"]
         button.tap()
@@ -103,10 +95,40 @@ class TicTacUITests: XCTestCase {
     }
     
     func testTapButtonNine (){
-        setUpMatch()
         let app = XCUIApplication()
         let button = app.buttons["buttonNine"]
         button.tap()
         XCTAssertEqual(button.label, "X")
+    }
+    
+    func testPlayerOneWon() {
+        let app = XCUIApplication()
+        let button = app.buttons["buttonOne"]
+        button.tap()
+        app.buttons["buttonFive"].tap()
+        app.buttons["buttonTwo"].tap()
+        app.buttons["buttonSix"].tap()
+        app.buttons["buttonThree"].tap()
+        
+        let alert = app.alerts["Player One Wins!"]
+        alert.collectionViews.buttons["Ok"].tap()
+        
+        XCTAssertEqual(button.label, "")
+    }
+    
+    func testPlayerTwoWon() {
+        let app = XCUIApplication()
+        let button = app.buttons["buttonOne"]
+        button.tap()
+        app.buttons["buttonFive"].tap()
+        app.buttons["buttonTwo"].tap()
+        app.buttons["buttonSix"].tap()
+        app.buttons["buttonNine"].tap()
+        app.buttons["buttonFour"].tap()
+        
+        let alert = app.alerts["Player Two Wins!"]
+        alert.collectionViews.buttons["Ok"].tap()
+        
+        XCTAssertEqual(button.label, "")
     }
 }

@@ -32,26 +32,27 @@ class BrainTests: XCTestCase {
     
     func testUserWinsHorrizontally(){
         brain.play(State.O, coordinate: Coordinate(0,0))
-        brain.play(State.O, coordinate: Coordinate(1,1))
+        brain.play(State.X, coordinate: Coordinate(1,1))
         brain.play(State.O, coordinate: Coordinate(2,0))
-        brain.play(State.O, coordinate: Coordinate(2,2))
-        let win = brain.play(State.O, coordinate: Coordinate(1,0))
-        XCTAssertEqual(win.isOver, true)
+        brain.play(State.X, coordinate: Coordinate(2,2))
+        let result = brain.play(State.O, coordinate: Coordinate(1,0))
+        XCTAssertNotNil(result.boxes)
+        XCTAssertEqual(result.won, true)
     }
     
     func testUserWinsVertically(){
         brain.play(State.O, coordinate: Coordinate(1,1))
         brain.play(State.O, coordinate: Coordinate(1,2))
-        let win = brain.play(State.O, coordinate: Coordinate(1,0))
-        
-        XCTAssertEqual(win.isOver, true)
+        let result = brain.play(State.O, coordinate: Coordinate(1,0))
+        XCTAssertNotNil(result.boxes)
+        XCTAssertEqual(result.won, true)
     }
     
     func testUserWinsDiagonally(){
         brain.play(State.O, coordinate: Coordinate(0,0))
         brain.play(State.O, coordinate: Coordinate(1,1))
-        let win = brain.play(State.O, coordinate: Coordinate(2,2))
-        
-        XCTAssertEqual(win.isOver, true)
+        let result = brain.play(State.O, coordinate: Coordinate(2,2))
+        XCTAssertNotNil(result.boxes)
+        XCTAssertEqual(result.won, true)
     }
 }
