@@ -27,7 +27,7 @@ class Game: NSObject {
         self.brain.board = [[State]](count: columns, repeatedValue:[State](count: rows, repeatedValue:State.Blank))
     }
     
-    func move(state:State, coordinate: Coordinate) -> (Bool, Bool) {
+    func move(state:State, coordinate: Coordinate) -> (moved: Bool, won: Bool, boxes: Array<Coordinate>?) {
         return self.brain.play(state, coordinate: coordinate)
     }
     
